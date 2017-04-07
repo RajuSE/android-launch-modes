@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="raju.dev.launchmode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".singleTop.A" android:label="A"/>
+        <activity android:name=".singleTop.B" android:label="B"/>
+        <activity android:name=".singleTop.C" android:label="C"/>
+        <activity android:name=".singleTop.D" android:launchMode="singleTop" android:label="D"/>
+
+        <activity android:name=".singleTask.A_singleTask" android:label="A"/>
+        <activity android:name=".singleTask.B_singleTask" android:label="B"/>
+        <activity android:name=".singleTask.C_singleTask" android:label="C"/>
+        <activity android:name=".singleTask.D_singleTask" android:launchMode="singleTask"  android:label="D"/>
+
+        <activity android:name=".singleInstance.A_singleInstance" android:label="A"/>
+        <activity android:name=".singleInstance.B_singleInstance" android:label="B"/>
+        <activity android:name=".singleInstance.C_singleInstance" android:label="C"/>
+        <activity android:name=".singleInstance.D_singleInstance" android:launchMode="singleInstance"  android:label="D"/>
+
+    </application>
+
+</manifest>
